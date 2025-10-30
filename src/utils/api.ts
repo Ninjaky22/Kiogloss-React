@@ -29,6 +29,11 @@ const apiService = {
       if (!response.ok) throw new Error('Error al actualizar proyecto');
       return response.json();
     },
+    buscarPorNombre: async (nombre: string) => {
+      const response = await fetch(`${API_BASE_URL}/productos/buscar?nombre=${nombre}`);
+      if (!response.ok) throw new Error('Error al buscar productos');
+      return response.json();
+    },
     delete: async (id: number) => {
       const response = await fetch(`${API_BASE_URL}/productos/${id}`, {
         method: 'DELETE'
