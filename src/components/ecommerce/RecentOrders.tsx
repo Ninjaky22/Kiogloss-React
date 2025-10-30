@@ -23,48 +23,48 @@ interface Product {
 const tableData: Product[] = [
   {
     id: 1,
-    name: "MacBook Pro 13”",
+    name: "Producto 1",
     variants: "2 Variants",
-    category: "Laptop",
+    category: "xxxx",
     price: "$2399.00",
     status: "Delivered",
-    image: "/images/product/product-01.jpg", // Replace with actual image URL
+    image: "", 
   },
   {
     id: 2,
-    name: "Apple Watch Ultra",
+    name: "Producto 2",
     variants: "1 Variant",
-    category: "Watch",
+    category: "xxxx",
     price: "$879.00",
     status: "Pending",
-    image: "/images/product/product-02.jpg", // Replace with actual image URL
+    image: "",
   },
   {
     id: 3,
-    name: "iPhone 15 Pro Max",
+    name: "Producto 3",
     variants: "2 Variants",
-    category: "SmartPhone",
+    category: "xxxx",
     price: "$1869.00",
     status: "Delivered",
-    image: "/images/product/product-03.jpg", // Replace with actual image URL
+    image: "",
   },
   {
     id: 4,
-    name: "iPad Pro 3rd Gen",
+    name: "Producto 4",
     variants: "2 Variants",
-    category: "Electronics",
+    category: "xxxx",
     price: "$1699.00",
     status: "Canceled",
-    image: "/images/product/product-04.jpg", // Replace with actual image URL
+    image: "", 
   },
   {
     id: 5,
-    name: "AirPods Pro 2nd Gen",
+    name: "Producto 5",
     variants: "1 Variant",
-    category: "Accessories",
+    category: "xxxx",
     price: "$240.00",
     status: "Delivered",
-    image: "/images/product/product-05.jpg", // Replace with actual image URL
+    image: "", 
   },
 ];
 
@@ -74,7 +74,7 @@ export default function RecentOrders() {
       <div className="flex flex-col gap-2 mb-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
-            Recent Orders
+            Ordebes Recientes
           </h3>
         </div>
 
@@ -115,10 +115,10 @@ export default function RecentOrders() {
                 strokeWidth="1.5"
               />
             </svg>
-            Filter
+            Filtrar
           </button>
           <button className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-theme-sm font-medium text-gray-700 shadow-theme-xs hover:bg-gray-50 hover:text-gray-800 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-white/[0.03] dark:hover:text-gray-200">
-            See all
+            Ver todo
           </button>
         </div>
       </div>
@@ -131,25 +131,25 @@ export default function RecentOrders() {
                 isHeader
                 className="py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
               >
-                Products
+                Productos
               </TableCell>
               <TableCell
                 isHeader
                 className="py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
               >
-                Category
+                Categoria
               </TableCell>
               <TableCell
                 isHeader
                 className="py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
               >
-                Price
+                Precio
               </TableCell>
               <TableCell
                 isHeader
                 className="py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
               >
-                Status
+                Estado
               </TableCell>
             </TableRow>
           </TableHeader>
